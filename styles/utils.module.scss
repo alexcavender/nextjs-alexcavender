@@ -80,18 +80,25 @@ $breakpointLg: '800px';
 }
 
 .profilePic {
+  margin-top: 3.5rem;
 
   @media(min-width:$breakpointLg) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 0;
   }
 }
 
 .recentProjects {
   background: #eeeeee9c;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media(min-width:$breakpointLg) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .brandsWorkedWith {
@@ -127,13 +134,21 @@ $breakpointLg: '800px';
   font-size: 12px;
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    @media(min-width:800px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }
 
 .footerItem {
+  margin-bottom: 3rem;
+
+  @media(min-width:800px) {
+    margin-bottom: 0;
+  }
   
   h4 {
     font-size: 20px;
@@ -154,7 +169,11 @@ $breakpointLg: '800px';
 
 .attribution {
   opacity: .7;
-  padding: 3.2rem 0;
-  text-align: center;
+  padding: 3.2rem 1rem;
+  text-align: left;
   font-size: 16px;
+
+  @media(min-width:800px) {
+    text-align: center;
+  }
 }

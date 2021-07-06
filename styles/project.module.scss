@@ -1,15 +1,15 @@
-.project {
- 
-}
 
 .projectHeading {
   font-size: 25px;
 }
 
 .projectImage {
-  width: 50%;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+  @media(min-width:800px) {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }
 
-.projectContent {
-  
-}

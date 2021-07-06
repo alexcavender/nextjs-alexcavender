@@ -7,19 +7,29 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
   return (
     <div className="project">
       <style jsx>{`
-        .project {
-          display: flex;
-          padding: 4rem 0;
-        }
-      `}</style>
-      <style jsx>{`
-        .project {
-          flex-direction: ${imgSide == 'left' ? 'row-reverse' : 'row'};
+      .project {
+        display: flex;
+        padding: 0 0 3rem 0;
+        flex-direction: column-reverse;
+      }
+
+        @media(min-width: 800px) {
+          .project {
+            flex-direction: ${imgSide == 'left' ? 'row-reverse' : 'row'};
+            padding: 4rem 0;
+          }
         }
 
         .projectContent {
-          width: 50%;
-          margin: ${imgSide == 'left' ? '0 0 0 40px' : '0 40px 0 0'};
+         
+          width: 100%;
+        }
+
+        @media(min-width:800px) {
+          .projectContent {
+            margin: ${imgSide == 'left' ? '0 0 0 40px' : '0 40px 0 0'};
+            width: 50%;
+          }
         }
       `}</style>
       <div className="projectContent">
