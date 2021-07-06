@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
-
+import Project from '../components/project'
 
 export default function Home() {
   return (
@@ -27,20 +27,14 @@ export default function Home() {
       <section>
         <h2>Recent Projects</h2>
 
-        <h3>React Project #3: React front-end for WooCommerce</h3>
-        <p>
-          A fast and simple Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
-          This project gave me an opportunity to again use React Hooks and work with React Router for the first time.
-        </p>
-        <a href="https://ices0.csb.app/"  target="_blank" rel="noopener noreferrer">
-          <Image
-            className="project-image"
-            src="/images/reactproject-3.png"
-            height={938} 
-            width={1899}
-            alt="React Js Project 3"
-          />
-        </a>
+        <Project 
+        name="React Project #3: React front-end for WooCommerce"
+        description="A fast and straightforward Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
+        This project gave me an opportunity to again use React Hooks and work with React Router for the first time."
+        link="https://ices0.csb.app/"
+        imgSrc="/images/reactproject-3.png"
+        imgAlt="React Js Project 3"
+        />
 
       </section>
     </Layout>
