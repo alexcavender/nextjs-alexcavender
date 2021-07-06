@@ -65,30 +65,26 @@ export default function Home() {
             name="Learning React Project #2: Simple Music Player using React Hooks"
             description="Using React Hooks, I built a simple music player that uses a Playlist + HTMLAUdioElement."
             link="https://448l7.csb.app/"
-            imgSrc="/images/reactproject-3.png"
+            imgSrc="/images/reactproject-2.png"
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
           />
         </div>
       </section>
-
       <section className={utilStyles.container}>
         <h2>
           Brands I've worked with
         </h2>
         <ul>
           <li>Astute</li>
+          <li>Codeable</li>
           <li>CannaPlanners</li>
           <li>HumanMade</li>
           <li>Readybase</li>
           <li>Scout Digital</li>
           <li>VT Digger</li>
         </ul>
-        
-       
-        
-
       </section>
     </Layout>
   )
