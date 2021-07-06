@@ -113,6 +113,7 @@ $breakpointLg: '800px';
 .primaryBtn {
   border-radius: 30px;
   background-color: royalblue;
+  box-shadow: 0 0 21px rgba(0, 0, 255, 0.418);
   color: #FFF;
   display: inline-block;
   font-size: 17px;
@@ -120,18 +121,23 @@ $breakpointLg: '800px';
   padding: 14px 24px;
   margin-top: 2rem;
   text-decoration: none;
-  transition: .2s;
+  transition: .32s;
 
   &:hover {
     background-color: rgb(52, 84, 180);
     text-decoration: none;
+    box-shadow: 0 0 29px rgba(0, 0, 255, 0.644);
   }
 }
 
 .footer {
-  margin: 8rem 0 0 0;
+  // margin: 3rem 0;
   padding: 2rem 0;
   font-size: 12px;
+
+  @media(min-width:800px) {
+    margin: 8rem 0 0 0;
+  }
 
   .container {
 
@@ -169,7 +175,7 @@ $breakpointLg: '800px';
 
 .attribution {
   opacity: .7;
-  padding: 3.2rem 1rem;
+  padding: 3rem 1rem;
   text-align: left;
   font-size: 16px;
 
