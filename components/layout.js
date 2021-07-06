@@ -32,17 +32,16 @@ export default function Layout({ children, home }) {
     )}
     <footer className={utilStyles.footer}>
       <div className={utilStyles.container}>
-        
         <div className={utilStyles.footerItem}>
           <h4>Social</h4>
           <ul>
             <li>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/alexcavender" target="_blank" rel="noopener noreferrer">
                 Github
               </a>
             </li>
             <li>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/alex-cavender/" target="_blank" rel="noopener noreferrer">
                 Linkedin
               </a>
             </li>

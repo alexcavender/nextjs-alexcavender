@@ -89,9 +89,18 @@ $breakpointLg: '800px';
 }
 
 .recentProjects {
-
   background: #eeeeee9c;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.brandsWorkedWith {
   padding-top: 80px;
+  ul{
+    list-style: none;
+    font-size: 1.543rem;
+    padding-left: 0;
+  }
 }
 
 .primaryBtn {

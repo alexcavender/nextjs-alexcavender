@@ -16,7 +16,7 @@ export default function Home() {
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
             <p className={utilStyles.headingLg}>I'm a Web Developer based in Vermont.</p>
-            <p>I specialize in JavaScript, WordPress and Responsive Web Design.</p>
+            <p>I specialize in JavaScript (React & Vue), WordPress .</p>
             <a className={utilStyles.primaryBtn}
             href="mailto:alexcavender@gmail.com?Subject=Hello"
             >Contact Me</a>
@@ -35,14 +35,16 @@ export default function Home() {
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
-          <Project
+          {/* <Project
             name="MMG"
             description="MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
             link=""
             imgSrc="/images/MMG.png"
             imgWidth="754"
             imgHeight="827"
-          />
+            imgSide="left"
+          /> */}
+          
           <Project 
             name="Sunset Lake CBD"
             description="For CannaPlanners"
@@ -50,6 +52,16 @@ export default function Home() {
             imgSrc="/images/sunsetlake.png"
             imgWidth="748" 
             imgHeight="832"
+            imgSide="right"
+          />
+          <Project 
+            name="BeatStore UI Theme"
+            description="VueJS + WordPress Theme"
+            link="https://acav.beatstore.co/"
+            imgSrc="/images/ui-theme.png"
+            imgWidth="748"
+            imgHeight="828"
+            imgSide="left"
           />
           <Project 
             name="Learning React Project #3: React front-end for WooCommerce"
@@ -60,6 +72,7 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
+            imgSide="right"
           />
           <Project 
             name="Learning React Project #2: Simple Music Player using React Hooks"
@@ -69,22 +82,25 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
+            imgSide="left"
           />
         </div>
       </section>
-      <section className={utilStyles.container}>
-        <h2>
-          Brands I've worked with
-        </h2>
-        <ul>
-          <li>Astute</li>
-          <li>Codeable</li>
-          <li>CannaPlanners</li>
-          <li>HumanMade</li>
-          <li>Readybase</li>
-          <li>Scout Digital</li>
-          <li>VT Digger</li>
-        </ul>
+      <section className={utilStyles.brandsWorkedWith}>
+        <div className={utilStyles.container}>
+          <h2>
+            Brands I've worked with
+          </h2>
+          <ul>
+            <li>Astute</li>
+            <li>Codeable</li>
+            <li>CannaPlanners</li>
+            <li>HumanMade</li>
+            <li>Readybase</li>
+            <li>Scout Digital</li>
+            <li>VT Digger</li>
+          </ul>
+        </div>
       </section>
     </Layout>
   )
