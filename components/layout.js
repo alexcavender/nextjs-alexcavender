@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Vermont Web Developer"
+        content="WordPress Web Design, React, Vue , PHP and NextJS. Vermont Web Developer"
       />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
