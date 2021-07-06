@@ -27,7 +27,7 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
 
         @media(min-width:800px) {
           .projectContent {
-            margin: ${imgSide == 'left' ? '0 0 0 40px' : '0 40px 0 0'};
+            margin: ${imgSide == 'left' ? '0 0 0 60px' : '0 60px 0 0'};
             width: 50%;
           }
         }

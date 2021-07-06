@@ -56,7 +56,7 @@ export default function Home() {
           />
           <Project 
             name="BeatStore UI Theme"
-            description="Hybrid Vue + WordPress Theme."
+            description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme."
             link="https://acav.beatstore.co/"
             imgSrc="/images/ui-theme.png"
             imgWidth="748"
