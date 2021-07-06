@@ -18,7 +18,7 @@ export default function Home() {
             <p className={utilStyles.headingLg}>I'm a Web Developer based in Vermont.</p>
             <p>I specialize in JavaScript, WordPress and Responsive Web Design.</p>
             <a className={utilStyles.primaryBtn}
-            href=""
+            href="mailto:alexcavender@gmail.com?Subject=Hello"
             >Contact Me</a>
           </div>
           <div className={utilStyles.profilePic}>
