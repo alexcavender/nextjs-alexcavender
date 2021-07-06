@@ -34,6 +34,13 @@ export default function Layout({ children, home }) {
       <div className={utilStyles.container}>
         &copy; {new Date().getFullYear()}
 
+        <a href="" target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+       
+        <a href="" target="_blank" rel="noopener noreferrer">
+          Linkedin
+        </a>
         <p>Built with React (Next.js) and hosted on Vercel</p>
       </div>
      
