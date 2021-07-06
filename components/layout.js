@@ -8,7 +8,7 @@ const name = 'Alex Cavender'
 export const siteTitle = 'Alex Cavender | Vermont Web Developer'
 
 export default function Layout({ children, home }) {
-  return <div className={styles.container}>
+  return <div>
     <Head>
       <link rel="icon" href="/favicon.ico" />
       <meta
@@ -30,6 +30,13 @@ export default function Layout({ children, home }) {
         </Link>
       </div>
     )}
-  
+    <footer className={utilStyles.footer}>
+      <div className={utilStyles.container}>
+        &copy; {new Date().getFullYear()}
+
+        <p>Built with React (Next.js) and hosted on Vercel</p>
+      </div>
+     
+    </footer>
     </div>
 }

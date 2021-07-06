@@ -11,7 +11,7 @@ export default function Home() {
         <title>{siteTitle}</title>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Montserrat&display=swap" rel="stylesheet" />
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.container}>
         <div className={utilStyles.headerGrid}>
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className={utilStyles.container}>
         <h2>Recent Projects</h2>
 
         <Project 

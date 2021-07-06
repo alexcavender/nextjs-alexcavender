@@ -1,5 +1,13 @@
 $breakpointLg: '800px';
 
+
+.container {
+  max-width: 1100px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -95,5 +103,19 @@ $breakpointLg: '800px';
   &:hover {
     background-color: rgb(52, 84, 180);
     text-decoration: none;
+  }
+}
+
+.footer {
+  margin: 8rem 0 0 0;
+  padding: 2rem 0;
+  font-size: 12px;
+  background-color: #333;
+  color: #FFF;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
