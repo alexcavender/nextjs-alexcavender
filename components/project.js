@@ -9,7 +9,7 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
       <style jsx>{`
         .project {
           display: flex;
-          padding: 0 0 3rem 0;
+          padding: 1.5rem 0 3rem 0;
           flex-direction: column-reverse;
         }
 
