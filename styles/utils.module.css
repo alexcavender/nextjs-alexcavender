@@ -50,3 +50,26 @@
 .lightText {
   color: #666;
 }
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0;
+}
+
+.profilePic {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.primaryBtn {
+  border-radius: 30px;
+  background-color: royalblue;
+  color: #FFF;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 14px 24px;
+  margin-top: 2rem;
+}

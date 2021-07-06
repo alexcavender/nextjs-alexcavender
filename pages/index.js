@@ -9,21 +9,30 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Montserrat&display=swap" rel="stylesheet" />
       </Head>
       <section className={utilStyles.headingMd}>
-        <Image 
-        priority
-        src="/images/alex.jpg"
-        className={utilStyles.borderCircle}
-        width={160}
-        height={160}
-        
-        />
-        <h2>Hi, I'm Alex.</h2>
-        <p>I'm a Web Developer based in Vermont.</p>
-        <p>I specialize in JavaScript, WordPress and Responsive Web Design.</p>
+        <div className={utilStyles.headerGrid}>
+          <div>
+            <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
+            <p>I'm a Web Developer based in Vermont.</p>
+            <p>I specialize in JavaScript, WordPress and Responsive Web Design.</p>
+            <a className={utilStyles.primaryBtn}
+            href=""
+            >Contact Me</a>
+          </div>
+          <div className={utilStyles.profilePic}>
+            <Image 
+            priority
+            src="/images/alex.jpg"
+            className={utilStyles.borderCircle}
+            width={220}
+            height={220}
+            />
+          </div>
+        </div>
       </section>
-
       <section>
         <h2>Recent Projects</h2>
 
