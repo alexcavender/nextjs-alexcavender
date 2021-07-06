@@ -76,7 +76,7 @@ export default function Home() {
           />
           <Project 
             name="Learning React Project #2: Simple Music Player using React Hooks"
-            description="Using React Hooks, I built a simple music player that uses a Playlist + HTMLAUdioElement."
+            description="Using React Hooks, I built a simple music player that uses a JSON Playlist + HTMLAdioElement."
             link="https://448l7.csb.app/"
             imgSrc="/images/reactproject-2.png"
             imgAlt="React Js Project 3"
