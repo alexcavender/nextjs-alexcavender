@@ -11,6 +11,14 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Image 
+        priority
+        src="/images/alex.jpg"
+        className={utilStyles.borderCircle}
+        width={160}
+        height={160}
+        
+        />
         <h2>Hi, I'm Alex.</h2>
         <p>I'm a Web Developer based in Vermont.</p>
         <p>I specialize in JavaScript, WordPress and Responsive Web Design.</p>
