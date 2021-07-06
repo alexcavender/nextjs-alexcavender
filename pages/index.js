@@ -32,14 +32,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={utilStyles.container}>
-        <div className={utilStyles.recentProjects}>
+      <section className={utilStyles.recentProjects}>
+        <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
           <Project
             name="MMG"
-            description=""
+            description="MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
             link=""
             imgSrc="/images/MMG.png"
+            imgWidth="754"
+            imgHeight="827"
+          />
+          <Project 
+            name="Sunset Lake CBD"
+            description="For CannaPlanners"
+            link="https://sunsetlakecbd.com/"
+            imgSrc="/images/sunsetlake.png"
+            imgWidth="748" 
+            imgHeight="832"
           />
           <Project 
             name="Learning React Project #3: React front-end for WooCommerce"
@@ -48,6 +58,8 @@ export default function Home() {
             link="https://ices0.csb.app/"
             imgSrc="/images/reactproject-3.png"
             imgAlt="React Js Project 3"
+            imgHeight="938"
+            imgWidth="1899"
           />
           <Project 
             name="Learning React Project #2: Simple Music Player using React Hooks"
@@ -55,19 +67,27 @@ export default function Home() {
             link="https://448l7.csb.app/"
             imgSrc="/images/reactproject-3.png"
             imgAlt="React Js Project 3"
+            imgHeight="938"
+            imgWidth="1899"
           />
         </div>
       </section>
 
       <section className={utilStyles.container}>
-
         <h2>
           Brands I've worked with
         </h2>
-
-        CannaPlanners
-        HumanMade
-        VT Digger
+        <ul>
+          <li>Astute</li>
+          <li>CannaPlanners</li>
+          <li>HumanMade</li>
+          <li>Readybase</li>
+          <li>Scout Digital</li>
+          <li>VT Digger</li>
+        </ul>
+        
+       
+        
 
       </section>
     </Layout>

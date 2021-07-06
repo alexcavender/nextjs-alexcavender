@@ -1,5 +1,6 @@
 .project {
   display: flex;
+  padding: 4rem 0;
 }
 
 .projectHeading {
@@ -9,6 +10,8 @@
 .projectImage {
   width: 50%;
 }
+
 .projectContent {
   width: 50%;
+  margin-right: 40px;
 }
