@@ -7,11 +7,11 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
   return (
     <div className="project">
       <style jsx>{`
-      .project {
-        display: flex;
-        padding: 0 0 3rem 0;
-        flex-direction: column-reverse;
-      }
+        .project {
+          display: flex;
+          padding: 0 0 3rem 0;
+          flex-direction: column-reverse;
+        }
 
         @media(min-width: 800px) {
           .project {
@@ -21,7 +21,6 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
         }
 
         .projectContent {
-         
           width: 100%;
         }
 
@@ -31,15 +30,35 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
             width: 50%;
           }
         }
+
+        .projectImage {
+          width: 100%;
+          margin-bottom: 1.5rem;
+          overflow: hidden;
+        }
+
+        @media(min-width:800px) {
+          .projectImage {
+            width: 50%;
+            margin-bottom: 0;
+            
+          }
+
+          .projectImage a {
+            
+            display: block;
+            max-width: 390px;
+            margin-left: ${imgSide == 'right' ? 'auto' : '0' };
+            margin-right: ${imgSide == 'right' ? '0' : 'auto' };
+          }
+        }
+
       `}</style>
       <div className="projectContent">
         <h3 className={projectStyles.projectHeading}>
           {name}
         </h3>
-        <p>
-        {description}
-        </p>
-
+        <p>{description}</p>
         <a 
         href={link} 
         target="_blank" 
@@ -48,11 +67,11 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
         >
         View Project
         </a>
-
       </div>
-      <div className={projectStyles.projectImage}>
+      <div className="projectImage">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <Image
+            layout="responsive"
             className="project-image"
             src={imgSrc}
             height={imgHeight} 

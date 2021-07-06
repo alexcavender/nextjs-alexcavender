@@ -37,7 +37,7 @@ export default function Home() {
           <h2>Recent Projects</h2>
           {/* <Project
             name="MMG"
-            description="MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
+            description="Design by Scott Preavy. MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
             link=""
             imgSrc="/images/MMG.png"
             imgWidth="754"
@@ -47,7 +47,7 @@ export default function Home() {
           
           <Project 
             name="Sunset Lake CBD"
-            description="For CannaPlanners."
+            description="Responsive WordPress + WooCommerce build For CannaPlanners. Design by Scott Preavy."
             link="https://sunsetlakecbd.com/"
             imgSrc="/images/sunsetlake.png"
             imgWidth="748" 
@@ -56,7 +56,7 @@ export default function Home() {
           />
           <Project 
             name="BeatStore UI Theme"
-            description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme."
+            description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme. Design by Scott Preavy."
             link="https://acav.beatstore.co/"
             imgSrc="/images/ui-theme.png"
             imgWidth="748"
