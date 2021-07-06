@@ -47,7 +47,7 @@ export default function Home() {
           
           <Project 
             name="Sunset Lake CBD"
-            description="For CannaPlanners"
+            description="For CannaPlanners."
             link="https://sunsetlakecbd.com/"
             imgSrc="/images/sunsetlake.png"
             imgWidth="748" 
@@ -56,7 +56,7 @@ export default function Home() {
           />
           <Project 
             name="BeatStore UI Theme"
-            description="VueJS + WordPress Theme"
+            description="Hybrid Vue + WordPress Theme."
             link="https://acav.beatstore.co/"
             imgSrc="/images/ui-theme.png"
             imgWidth="748"

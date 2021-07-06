@@ -32,6 +32,15 @@ export default function Layout({ children, home }) {
     )}
     <footer className={utilStyles.footer}>
       <div className={utilStyles.container}>
+      <div className={utilStyles.footerItem}>
+        <h4>Services</h4>
+        <ul>
+          <li>UI/UX Design</li>
+          <li>Web Development</li>
+        </ul>
+        
+        
+      </div>
         <div className={utilStyles.footerItem}>
           <h4>Social</h4>
           <ul>
