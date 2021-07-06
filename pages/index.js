@@ -26,13 +26,21 @@ export default function Home() {
 
       <section>
         <h2>Recent Projects</h2>
-        <Image
-          className="project-image"
-          src="/images/reactproject-3.png" // Route of the image file
-          height={938} // Desired size with correct aspect ratio
-          width={1899} // Desired size with correct aspect ratio
-          alt="React Js Project 3"
-        />
+
+        <h3>React Project #3: React front-end for WooCommerce</h3>
+        <p>
+          A fast and simple Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
+          This project gave me an opportunity to again use React Hooks and work with React Router for the first time.
+        </p>
+        <a href="https://ices0.csb.app/"  target="_blank" rel="noopener noreferrer">
+          <Image
+            className="project-image"
+            src="/images/reactproject-3.png"
+            height={938} 
+            width={1899}
+            alt="React Js Project 3"
+          />
+        </a>
 
       </section>
     </Layout>
