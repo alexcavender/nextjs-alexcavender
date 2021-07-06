@@ -110,12 +110,37 @@ $breakpointLg: '800px';
   margin: 8rem 0 0 0;
   padding: 2rem 0;
   font-size: 12px;
-  background-color: #111;
-  color: #FFF;
+  // background-color: #111;
+  // color: #FFF;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.footerItem {
+  
+  h4 {
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  li a {
+    color: #111;
+    font-size: 1rem;
+  }
+}
+
+.attribution {
+  opacity: .7;
+  padding: 3.2rem 0;
+  text-align: center;
+  font-size: 16px;
 }

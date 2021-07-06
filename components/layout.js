@@ -32,18 +32,32 @@ export default function Layout({ children, home }) {
     )}
     <footer className={utilStyles.footer}>
       <div className={utilStyles.container}>
-        &copy; {new Date().getFullYear()}
-
-        <a href="" target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-       
-        <a href="" target="_blank" rel="noopener noreferrer">
-          Linkedin
-        </a>
-        <p>Built with React (Next.js) and hosted on Vercel</p>
+        
+        <div className={utilStyles.footerItem}>
+          <h4>Social</h4>
+          <ul>
+            <li>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className={utilStyles.footerItem}>
+          <h4>About</h4>
+          <p>Web developer focused on JavaScript, WordPress, Vue, React.js</p>
+        </div>
       </div>
-     
     </footer>
+    <div className={utilStyles.attribution}>
+      &copy; {new Date().getFullYear()}
+      {'. '}
+      Built with React (Next.js) and hosted on Vercel
+    </div>
     </div>
 }

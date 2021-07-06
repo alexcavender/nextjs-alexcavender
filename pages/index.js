@@ -33,25 +33,30 @@ export default function Home() {
         </div>
       </section>
       <section className={utilStyles.container}>
-        <h2>Recent Projects</h2>
-
-        <Project 
-          name="Learning React Project #3: React front-end for WooCommerce"
-          description="A fast and straightforward Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
-          This project gave me an opportunity to again use React Hooks and work with React Router for the first time."
-          link="https://ices0.csb.app/"
-          imgSrc="/images/reactproject-3.png"
-          imgAlt="React Js Project 3"
-        />
-
-        <Project 
-          name="Learning React Project #2: Simple Music Player using React Hooks"
-          description="Using React Hooks, I built a simple music player that uses a Playlist + HTMLAUdioElement."
-          link="https://448l7.csb.app/"
-          imgSrc="/images/reactproject-3.png"
-          imgAlt="React Js Project 3"
-        />
-
+        <div className={utilStyles.recentProjects}>
+          <h2>Recent Projects</h2>
+          <Project
+            name="MMG"
+            description=""
+            link=""
+            imgSrc="/images/MMG.png"
+          />
+          <Project 
+            name="Learning React Project #3: React front-end for WooCommerce"
+            description="A fast and straightforward Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
+            This project gave me an opportunity to again use React Hooks and work with React Router for the first time."
+            link="https://ices0.csb.app/"
+            imgSrc="/images/reactproject-3.png"
+            imgAlt="React Js Project 3"
+          />
+          <Project 
+            name="Learning React Project #2: Simple Music Player using React Hooks"
+            description="Using React Hooks, I built a simple music player that uses a Playlist + HTMLAUdioElement."
+            link="https://448l7.csb.app/"
+            imgSrc="/images/reactproject-3.png"
+            imgAlt="React Js Project 3"
+          />
+        </div>
       </section>
 
       <section className={utilStyles.container}>
