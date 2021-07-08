@@ -57,7 +57,7 @@ export default function Home() {
 
           <Project
             name="Sticky Brand"
-            description="For CannaPlanners"
+            description="For CannaPlanners. Design by Scott Preavy."
             link=""
             imgSrc="/images/stickybrand.png"
             imgWidth="754"
