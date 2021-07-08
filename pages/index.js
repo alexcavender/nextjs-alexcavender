@@ -78,7 +78,8 @@ export default function Home() {
      
         </div>
       </section>
-      <section>
+      
+      {/* <section>
         <div className={utilStyles.container}>
           <h2>Mini Projects / Learning</h2>
              
@@ -102,7 +103,7 @@ export default function Home() {
             imgWidth="1899"
           />
         </div>
-      </section>
+      </section> */}
       <section className={utilStyles.brandsWorkedWith}>
         <div className={utilStyles.container}>
           <h2>
