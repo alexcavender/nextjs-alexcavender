@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import Image from 'next/image'
 import Project from '../components/project'
+import miniProject from '../components/miniProject'
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
           <Project
             name="MMG"
             description="Design by Scott Preavy. MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
-            link=""
+            link="https://alexcavender.com"
             imgSrc="/images/MMG.png"
             imgWidth="754"
             imgHeight="827"
@@ -58,7 +59,7 @@ export default function Home() {
           <Project
             name="Sticky Brand"
             description="For CannaPlanners. Design by Scott Preavy."
-            link=""
+            link="https://thestickybrand.com"
             imgSrc="/images/stickybrand.png"
             imgWidth="754"
             imgHeight="827"
@@ -73,7 +74,15 @@ export default function Home() {
             imgHeight="828"
             imgSide="right"
           />
-          <Project 
+
+     
+        </div>
+      </section>
+      <section>
+        <div className={utilStyles.container}>
+          <h2>Mini Projects / Learning</h2>
+             
+         <miniProject 
             name="Learning React Project #3: React front-end for WooCommerce"
             description="A fast and straightforward Frontend for WooCommerce built with React, React Router, WooCommerce and WordPress REST API.
             This project gave me an opportunity to again use React Hooks and work with React Router for the first time."
@@ -82,9 +91,8 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
-            imgSide="left"
           />
-          <Project 
+          <miniProject 
             name="Learning React Project #2: Simple Music Player using React Hooks"
             description="Using React Hooks, I built a simple music player that uses a JSON Playlist + HTMLAudioElement."
             link="https://448l7.csb.app/"
@@ -92,7 +100,6 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
-            imgSide="right"
           />
         </div>
       </section>
