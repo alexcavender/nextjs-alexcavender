@@ -35,7 +35,7 @@ export default function Home() {
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
-          {/* <Project
+          <Project
             name="MMG"
             description="Design by Scott Preavy. MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
             link=""
@@ -43,8 +43,8 @@ export default function Home() {
             imgWidth="754"
             imgHeight="827"
             imgSide="left"
-          /> */}
-          
+          />
+
           <Project 
             name="Sunset Lake CBD"
             description="Responsive WordPress + WooCommerce build For CannaPlanners. Design by Scott Preavy."
@@ -54,6 +54,16 @@ export default function Home() {
             imgHeight="832"
             imgSide="right"
           />
+
+          <Project
+            name="Sticky Brand"
+            description="For CannaPlanners"
+            link=""
+            imgSrc="/images/stickybrand.png"
+            imgWidth="754"
+            imgHeight="827"
+            imgSide="left"
+          />
           <Project 
             name="BeatStore UI Theme"
             description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme. Design by Scott Preavy."
@@ -61,7 +71,7 @@ export default function Home() {
             imgSrc="/images/ui-theme.png"
             imgWidth="748"
             imgHeight="828"
-            imgSide="left"
+            imgSide="right"
           />
           <Project 
             name="Learning React Project #3: React front-end for WooCommerce"
@@ -72,7 +82,7 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
-            imgSide="right"
+            imgSide="left"
           />
           <Project 
             name="Learning React Project #2: Simple Music Player using React Hooks"
@@ -82,7 +92,7 @@ export default function Home() {
             imgAlt="React Js Project 3"
             imgHeight="938"
             imgWidth="1899"
-            imgSide="left"
+            imgSide="right"
           />
         </div>
       </section>

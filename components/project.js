@@ -45,7 +45,6 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
           }
 
           .projectImage a {
-            
             display: block;
             max-width: 390px;
             margin-left: ${imgSide == 'right' ? 'auto' : '0' };
@@ -59,14 +58,17 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
           {name}
         </h3>
         <p>{description}</p>
-        <a 
-        href={link} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className={utilStyles.primaryBtn}
-        >
-        View Project
-        </a>
+        { link && 
+          <a 
+          href={link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className={utilStyles.primaryBtn}
+          >
+          View Project
+          </a>
+        }
+        
       </div>
       <div className="projectImage">
         <a href={link} target="_blank" rel="noopener noreferrer">
