@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import Image from 'next/image'
@@ -120,6 +121,9 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      {/* <Link as="/blog/test-post" href="/blog/[id]">
+        <a>First Post</a>
+      </Link> */}
     </Layout>
   )
 }
