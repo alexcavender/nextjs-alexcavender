@@ -121,9 +121,15 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      
       {/* <Link as="/blog/1" href="/blog/[id]">
         <a>First Post</a>
       </Link> */}
+
+      {/* <Link href="/login">
+        <a>Login</a>
+      </Link> */}
+      
     </Layout>
   )
 }
