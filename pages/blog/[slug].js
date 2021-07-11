@@ -1,10 +1,10 @@
-import {useRouter} from  'next/router';
+// import {useRouter} from  'next/router';
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-const Post = () => {
-  const router = useRouter();
-  const {slug} = router.query;
+const Post = ({title, body}) => {
+  // const router = useRouter();
+  // const {slug} = router.query;
 
   return (
     <> 
@@ -12,7 +12,9 @@ const Post = () => {
       <Head>
         <title>First Post</title>
       </Head>
-      <h1>Post: {slug}</h1>
+      <h1>{title}</h1>
+
+      <p>{body}</p>
       
     </Layout>
     
@@ -20,5 +22,12 @@ const Post = () => {
   );
 }
 
+Post.getInitialProps = async ({ query }) => {
+  const res = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${query.slug}`
+  );
+  const post = await res.json();
 
+  return post;
+}
 export default Post;
