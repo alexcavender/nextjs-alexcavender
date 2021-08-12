@@ -56,6 +56,7 @@ export default function Home() {
             imgHeight="832"
             imgSide="right"
           />
+          
 
           <Project
             name="Sticky Brand"
@@ -74,6 +75,16 @@ export default function Home() {
             imgWidth="748"
             imgHeight="828"
             imgSide="right"
+          />
+
+          <Project 
+            name="Gentle Path"
+            description="Responsive WordPress build For Astute, using combination of ACF + Gutenberg Blocks."
+            link="https://gentlepathmeadows.com/"
+            imgSrc="/images/gentlepath2.png"
+            imgWidth="1274" 
+            imgHeight="939"
+            imgSide="left"
           />
 
      
