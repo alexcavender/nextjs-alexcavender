@@ -82,8 +82,8 @@ export default function Home() {
             description="Responsive WordPress build For Astute, using combination of ACF + Gutenberg Blocks."
             link="https://gentlepathmeadows.com/"
             imgSrc="/images/gentlepath.PNG"
-            imgWidth="1274" 
-            imgHeight="939"
+            imgWidth="1902" 
+            imgHeight="967"
             imgSide="left"
           />
 
