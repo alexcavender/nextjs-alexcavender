@@ -17,7 +17,7 @@ export default function Home() {
         <div className={utilStyles.headerGrid}>
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
-            <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont.</h3>
+            <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at CannaPlanners.</h3>
             <p>I specialize in JavaScript (React & Vue), WordPress .</p>
             <a className={utilStyles.primaryBtn}
             href="mailto:alexcavender@gmail.com?Subject=Hello"
@@ -86,8 +86,6 @@ export default function Home() {
             imgHeight="967"
             imgSide="left"
           />
-
-     
         </div>
       </section>
       
