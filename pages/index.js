@@ -18,7 +18,7 @@ export default function Home() {
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
             <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at CannaPlanners.</h3>
-            <p>I specialize in JavaScript (React & Vue), WordPress .</p>
+            <p>I specialize in JavaScript (React & Vue), WordPress.</p>
             <a className={utilStyles.primaryBtn}
             href="mailto:alexcavender@gmail.com?Subject=Hello"
             >Contact Me</a>
@@ -58,7 +58,7 @@ export default function Home() {
           />
           
 
-          <Project
+          {/* <Project
             name="Sticky Brand"
             description="For CannaPlanners. Design by Scott Preavy."
             link="https://thestickybrand.com"
@@ -66,7 +66,7 @@ export default function Home() {
             imgWidth="754"
             imgHeight="827"
             imgSide="left"
-          />
+          /> */}
           <Project 
             name="BeatStore UI Theme"
             description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme. Design by Scott Preavy."
