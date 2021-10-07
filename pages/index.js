@@ -74,7 +74,7 @@ export default function Home() {
             imgSrc="/images/ui-theme.png"
             imgWidth="748"
             imgHeight="828"
-            imgSide="right"
+            imgSide="left"
           />
 
           <Project 
@@ -84,7 +84,7 @@ export default function Home() {
             imgSrc="/images/gentlepath.PNG"
             imgWidth="1902" 
             imgHeight="967"
-            imgSide="left"
+            imgSide="right"
           />
         </div>
       </section>
