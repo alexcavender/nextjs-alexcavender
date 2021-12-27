@@ -3,6 +3,43 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
+import { useForm, ValidationError } from '@formspree/react';
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("zxarojqm");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+  return (
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
 
 const name = 'Alex Cavender'
 export const siteTitle = 'Alex Cavender | Vermont Web Developer'
@@ -28,10 +65,8 @@ export default function Layout({ children, home }) {
         `}
       }>
       </script>
-
       <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-<script>
-  /* paste this line in verbatim */
+      <script dangerouslySetInnerHTML={{ __html: `/* paste this line in verbatim */
   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
   /* customize formbutton below*/     
   formbutton("create", {
@@ -61,8 +96,8 @@ export default function Layout({ children, home }) {
         backgroundColor: "gray"
       }
     }
-  });
-</script>
+  });` }} />
+
     </Head>
 
     <header className={styles.header}>
