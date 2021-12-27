@@ -19,9 +19,7 @@ export default function Home() {
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
             <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at CannaPlanners.</h3>
             <p>I specialize in JavaScript (React & Vue), WordPress.</p>
-            <a className={utilStyles.primaryBtn}
-            href="mailto:alexcavender@gmail.com?Subject=Hello"
-            >Contact Me</a>
+           
           </div>
           <div className={utilStyles.profilePic}>
             <Image 
