@@ -55,16 +55,6 @@ export default function Home() {
             imgSide="right"
           />
           
-
-          {/* <Project
-            name="Sticky Brand"
-            description="For CannaPlanners. Design by Scott Preavy."
-            link="https://thestickybrand.com"
-            imgSrc="/images/stickybrand.png"
-            imgWidth="754"
-            imgHeight="827"
-            imgSide="left"
-          /> */}
           <Project 
             name="BeatStore UI Theme"
             description="Single Page App style theme that integrates with WordPress + Easy Digital Downloads. Hybrid Vue + WordPress Theme. Design by Scott Preavy."
@@ -123,7 +113,6 @@ export default function Home() {
             <li>CannaPlanners</li>
             <li>HumanMade</li>
             <li>Readybase</li>
-            <li>Scout Digital</li>
             <li>VT Digger</li>
           </ul>
         </div>
