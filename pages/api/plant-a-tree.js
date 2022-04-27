@@ -29,18 +29,21 @@ export default function handler(req, res) {
         };
     }
 
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-      
-    fetch("https://tree-nation.com/api/projects?status=active", requestOptions)
-    .then(response => response.text())
-    .then(result => {
-        return res.status(200).json(result);
-        console.log(result);
-    })
-    .catch(error => console.log('error', error));
+    if ( req.method === 'GET' ) {
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+          
+        fetch("https://tree-nation.com/api/projects?status=active", requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            return res.status(200).json(result);
+            console.log(result);
+        })
+        .catch(error => console.log('error', error));
+    }
+    
 
     
 }
