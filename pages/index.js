@@ -35,15 +35,7 @@ export default function Home() {
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
-          <Project
-            name="MMG"
-            description="Design by Scott Preavy. MMG is a Black-led, non-binary-led global consultancy that centers on the principles of racial justice, LGBTQIA+ rights, transformative accountability, and gender equality in all that we do."
-            link="https://www.mmg.earth"
-            imgSrc="/images/MMG.png"
-            imgWidth="754"
-            imgHeight="827"
-            imgSide="left"
-          />
+         
 
           <Project 
             name="Sunset Lake CBD"
