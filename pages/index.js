@@ -63,6 +63,15 @@ export default function Home() {
             imgHeight="967"
             imgSide="right"
           />
+
+          <Project
+            name="Get Lost Game"
+            description="Get Lost is a geographic discovery game that uses randomized Streetside maps."
+            imgSrc="/images/getlostgame.png"
+            imgSide="left"
+            imgWidth="748"
+            imgHeight="432"
+          />
         </div>
       </section>
       
@@ -109,10 +118,6 @@ export default function Home() {
       
       {/* <Link as="/blog/1" href="/blog/[id]">
         <a>First Post</a>
-      </Link> */}
-
-      {/* <Link href="/login">
-        <a>Login</a>
       </Link> */}
       
     </Layout>

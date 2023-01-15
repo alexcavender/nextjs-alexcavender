@@ -7,7 +7,7 @@ const Fun = () => {
     const [results, setResults] = useState();
     const locationRef = useRef();
 
-    const apiCall = async () => {
+    const getWeather = async () => {
         if ( ! locationRef.current) {
             return;
         }
@@ -33,7 +33,7 @@ const Fun = () => {
                         className="relative w-full"
                         onSubmit={(event) => {
                             event.preventDefault();
-                            apiCall();
+                            getWeather();
                         }}>
                         <input 
                         className="w-full border border-solid border-slate-400 px-6 py-3" 
@@ -46,21 +46,25 @@ const Fun = () => {
                     </form>
                 </div>
             </section>
-            <section className="container py-12 mx-auto text-center">
+            <section className="container py-8 mx-auto text-center">
                  { results && results.weather ? (
-                    <div>
-                        <h2 className="text-3xl font-bold">Weather Right Now</h2>
+                    <>  
                         
-                        
-                        <img className="mx-auto" src={`http://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png`} alt="" />
-                        <p className="font-bold text-2xl">
-                            {results.main.temp}&deg;
-                        </p>
-                        <h3 className="text-2xl mb-0">{results.name}, {results.sys.country}</h3>
-                        <h4 className="text-lg mb-0">{results.weather[0].main}</h4>
-                        {/* <p>{results.weather[0].description}</p> */}
-                        
-                    </div>
+                        <h3 className="text-2xl mb-3">Weather Right Now in {results.name}, {results.sys.country}</h3>
+
+                        <div className="w-56 mx-auto lg:text-left lg:grid gap-4 lg:grid-cols-2">
+                            <img className="mx-auto" src={`http://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png`} alt="" />
+                            <div>
+                                <p>Feels like</p>
+                                <p className="font-bold text-5xl">
+                                    {results.main.feels_like}&deg;
+                                </p>
+                                <h4 className="text-lg mb-0">{results.weather[0].main}</h4>
+                                {/* <p>{results.weather[0].description}</p> */}
+                                
+                            </div>
+                        </div>                        
+                    </>
                 ) : null}
                 
                 { results && results.list ? (
