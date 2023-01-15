@@ -65,7 +65,7 @@ const Fun = () => {
                 
                 { results && results.list ? (
                     <div className="mt-16 container px-4">
-                        <h2 className="text-3xl font-bold">Hourly Forecast</h2>
+                        <h2 className="text-3xl font-bold">5 day / 3 Hour Forecast</h2>
                         <ul className="grid gap-4 grid-cols-2 lg:grid-cols-4">
                             { results.list.map(item  => (
                                 <li className="">
