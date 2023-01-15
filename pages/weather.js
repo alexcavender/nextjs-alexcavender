@@ -15,6 +15,7 @@ const Fun = () => {
         .then((response) => response.json())
         .then((data) => {
             setResults(data);
+            
         });    
     }
     
@@ -24,9 +25,9 @@ const Fun = () => {
                 <title>React Weather App | {siteTitle}</title>
             </Head>
             <section className="px-4 py-24 bg-slate-900">
-                <div className="container mx-auto flex flex-col">
+                <div className="container lg:w-1/2 mx-auto flex flex-col">
                     <h3 className="text-white text-5xl font-bold mb-2">Weather Component</h3>
-                    <p className="text-gray-100 text-xl mb-8">Built with the OpenWeather API and Tailwind CSS</p>
+                    <p className="text-gray-100 text-sm mb-8">Built with the OpenWeather API, React, and Tailwind CSS.</p>
                     
                     <form 
                         className="relative w-full"
@@ -58,6 +59,24 @@ const Fun = () => {
                         </p>
                     </div>
                 ) : null}
+                
+                { results && results.list ? (
+                    <div>
+                        <h2 className="text-2xl">Hourly Forecast</h2>
+                        <ul className="grid gap-4 grid-cols-4">
+                            { results.list.map(item  => (
+                                <li className="">
+                                    <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
+                                    <p>
+                                        <span>{item.dt_txt}</span><br />
+                                        <strong>{item.weather[0].main}</strong><br />
+                                        {item.weather[0].description}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ) : null }
 
                 { results && results.message ? (
                     <p>

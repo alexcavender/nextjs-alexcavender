@@ -12,7 +12,9 @@ export default async function handler(req, res) {
         const weather = await fetch( `https://api.openweathermap.org/data/2.5/weather?lat=${geoCall.coord.lat}&lon=${geoCall.coord.lon}&appid=${process.env.WEATHER_KEY}&units=imperial` );
         const result = await weather.json();
 
-        const forecast = await fetch( `https://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid=${process.env.WEATHER_KEY}`)
+        const forecast = await fetch( `https://api.openweathermap.org/data/2.5/forecast?lat=${geoCall.coord.lat}&lon=${geoCall.coord.lon}&appid=${process.env.WEATHER_KEY}&units=imperial`);
+        const forecastResult = await forecast.json();
+        result.list = forecastResult.list;
 
         return res.status(200).json(result);
     } else {
