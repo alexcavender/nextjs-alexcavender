@@ -17,9 +17,8 @@ export default function Home() {
         <div className={utilStyles.headerGrid}>
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
-            <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at CannaPlanners.</h3>
-            <p>I specialize in JavaScript (React & Vue), WordPress.</p>
-           
+            <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at <a href="https://cannaplanners.com/" target="_blank">CannaPlanners</a>.</h3>
+            <p>I specialize in JavaScript (React & Vue), PHP (I really like <a href="https://laravel.com" target="_blank">Laravel</a>), and WordPress.</p>
           </div>
           <div className={utilStyles.profilePic}>
             <Image 
@@ -35,8 +34,6 @@ export default function Home() {
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
-         
-
           <Project 
             name="Sunset Lake CBD"
             description="Responsive WordPress + WooCommerce build For CannaPlanners. Design by Scott Preavy."

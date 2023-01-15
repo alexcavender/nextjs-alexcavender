@@ -101,16 +101,11 @@ export default function Layout({ children, home }) {
     </Head>
 
     <header className={styles.header}>
-      {/* <h1>alexcavender.com</h1> */}
+      
     </header>
+
     <main>{children}</main>
-    {!home && (
-      <div className={styles.backToHome}>
-        <Link href="/">
-          <a>← Back to home</a>
-        </Link>
-      </div>
-    )}
+
     <footer className={utilStyles.footer}>
       <div className={utilStyles.container}>
       <div className={utilStyles.footerItem}>
@@ -119,8 +114,6 @@ export default function Layout({ children, home }) {
           <li>UI/UX Design</li>
           <li>Web Development</li>
         </ul>
-        
-        
       </div>
         <div className={utilStyles.footerItem}>
           <h4>Social</h4>

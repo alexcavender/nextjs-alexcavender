@@ -11,6 +11,9 @@ export default async function handler(req, res) {
     if ( geoCall.cod == 200 && geoCall.coord ) {
         const weather = await fetch( `https://api.openweathermap.org/data/2.5/weather?lat=${geoCall.coord.lat}&lon=${geoCall.coord.lon}&appid=${process.env.WEATHER_KEY}&units=imperial` );
         const result = await weather.json();
+
+        const forecast = await fetch( `https://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid=${process.env.WEATHER_KEY}`)
+
         return res.status(200).json(result);
     } else {
         // We didnt get a success response   
