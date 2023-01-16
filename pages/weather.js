@@ -18,6 +18,14 @@ const Fun = () => {
             
         });    
     }
+
+    const formatDateTime = ( string ) => {
+        let date = new Date( string );
+        const options1 = { weekday: 'long', hour: 'numeric', month: 'long', day: 'numeric' };
+        let formatted = new Intl.DateTimeFormat('en-US', options1 ).format(date);
+        console.log(formatted);
+        return formatted;
+    }
     
     return (
         <Layout weather>
@@ -48,8 +56,7 @@ const Fun = () => {
             </section>
             <section className="container py-8 mx-auto text-center">
                  { results && results.weather ? (
-                    <>  
-                        
+                    <>
                         <h3 className="text-2xl mb-3">Weather Right Now in {results.name}, {results.sys.country}</h3>
 
                         <div className="w-56 mx-auto lg:text-left lg:grid gap-4 lg:grid-cols-2">
@@ -59,23 +66,27 @@ const Fun = () => {
                                 <p className="font-bold text-5xl">
                                     {results.main.feels_like}&deg;
                                 </p>
-                                <h4 className="text-lg mb-0">{results.weather[0].main}</h4>
-                                {/* <p>{results.weather[0].description}</p> */}
-                                
+                                <h4 className="text-lg mb-0">{results.weather[0].main}</h4>    
                             </div>
-                        </div>                        
+                        </div>
+
+                        <ul className="">
+                            <li>Temperature: {results.main.temp}</li>
+                            <li>Wind: {results.wind.speed} MPH</li>
+                            <li>Humidity: {results.main.humidity}</li>
+                        </ul>                    
                     </>
                 ) : null}
                 
                 { results && results.list ? (
                     <div className="mt-16 container px-4">
                         <h2 className="text-3xl font-bold">5 day / 3 Hour Forecast</h2>
-                        <ul className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+                        <ul className="grid gap-4 grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
                             { results.list.map(item  => (
-                                <li className="">
+                                <li key={item.dt}>
                                     <img className="mx-auto" src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
                                     <p>
-                                        <span>{item.dt_txt}</span><br />
+                                        <span>{ formatDateTime(item.dt_txt) }</span><br />
                                         <strong>{item.weather[0].main}</strong><br />
                                         {item.weather[0].description}
                                     </p>
