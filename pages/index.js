@@ -34,15 +34,7 @@ export default function Home() {
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
           <h2>Recent Projects</h2>
-          <Project 
-            name="Sunset Lake CBD"
-            description="Responsive WordPress + WooCommerce build For CannaPlanners. Design by Scott Preavy."
-            link="https://sunsetlakecbd.com/"
-            imgSrc="/images/sunsetlake.png"
-            imgWidth="748" 
-            imgHeight="832"
-            imgSide="right"
-          />
+         
           
           <Project 
             name="BeatStore UI Theme"
