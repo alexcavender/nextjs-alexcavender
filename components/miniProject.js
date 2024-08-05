@@ -1,4 +1,3 @@
-import { loadGetInitialProps } from 'next/dist/next-server/lib/utils'
 import Image from 'next/image'
 import projectStyles from '../styles/project.module.scss'
 import utilStyles from '../styles/utils.module.scss'
