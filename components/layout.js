@@ -139,7 +139,7 @@ export default function Layout({ children, home }) {
     <div className={utilStyles.attribution}>
       &copy; {new Date().getFullYear()}
       {'. '}
-      Built with React (Next.js) and hosted on Vercel
+      Built with React & <a href="https://nextjs.org/" target="_blank">Next.js</a>
     </div>
     </div>
 }
