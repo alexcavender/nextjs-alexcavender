@@ -18,7 +18,7 @@ export default function Home() {
           <div>
             <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
             <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont, working at <a href="https://cannaplanners.com/" target="_blank">CannaPlanners</a>.</h3>
-            <p>I specialize in PHP (I really like <a href="https://laravel.com" target="_blank">Laravel</a>), JavaScript (React and Vue), .</p>
+            <p>I specialize in PHP (I really like <a href="https://laravel.com" target="_blank">Laravel</a>), and JavaScript (Next.js, React/Preact, Vue).</p>
           </div>
           <div className={utilStyles.profilePic}>
             <Image 
