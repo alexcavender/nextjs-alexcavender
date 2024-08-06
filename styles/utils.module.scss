@@ -37,7 +37,13 @@ $breakpointLg: '800px';
 }
 
 .borderCircle {
-  border-radius: 9999px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+
+  @media(min-width: 800px){
+	margin: 0;
+  }
 }
 
 .colorInherit {

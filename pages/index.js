@@ -33,8 +33,7 @@ export default function Home() {
       </section>
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
-          <h2>Recent Projects</h2>
-         
+          <h2>Selected Projects</h2>
           
           <Project 
             name="BeatStore UI Theme"
