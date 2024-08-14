@@ -23,7 +23,6 @@ const Fun = () => {
         let date = new Date( string );
         const options1 = { weekday: 'long', hour: 'numeric', month: 'long', day: 'numeric' };
         let formatted = new Intl.DateTimeFormat('en-US', options1 ).format(date);
-        console.log(formatted);
         return formatted;
     }
     

@@ -101,7 +101,6 @@ export default function Home() {
             <li>Codeable</li>
             <li>CannaPlanners</li>
             <li>HumanMade</li>
-            <li>Readybase</li>
             <li>VT Digger</li>
           </ul>
         </div>
