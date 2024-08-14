@@ -50,7 +50,7 @@ export default function Layout({ children, home }) {
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="WordPress Web Design, React, Vue , PHP and NextJS. Vermont Web Developer"
+        content="Laravel Web Development, React, Vue, PHP. Vermont Web Developer"
       />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
@@ -132,7 +132,7 @@ export default function Layout({ children, home }) {
         </div>
         <div className={utilStyles.footerItem}>
           <h4>About</h4>
-          <p>Web developer focused on JavaScript, WordPress, Vue, React.js</p>
+          <p>Web developer focused on Laravel, PHP, JavaScript, Vue, React.js</p>
         </div>
       </div>
     </footer>
