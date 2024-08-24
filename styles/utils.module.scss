@@ -84,8 +84,6 @@ $breakpointLg: '800px';
   }
 }
 
-.profilePic {
-}
 
 .recentProjects {
   background: #eeeeee9c;
@@ -100,9 +98,9 @@ $breakpointLg: '800px';
 
 .brandsWorkedWith {
   padding-top: 80px;
-  ul{
+
+  ul {
     list-style: none;
-    font-size: 1.543rem;
     padding-left: 0;
   }
 }
@@ -129,7 +127,6 @@ $breakpointLg: '800px';
 }
 
 .footer {
-  // margin: 3rem 0;
   padding: 2rem 0;
   font-size: 12px;
 

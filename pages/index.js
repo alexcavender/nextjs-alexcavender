@@ -36,7 +36,7 @@ export default function Home() {
       </section>
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
-          <h2 className="font-bold text-3xl">Selected Projects</h2>
+          <h2 className="font-bold text-2xl lg:text-3xl">Selected Projects</h2>
           
           <Project 
             name="BeatStore UI Theme"
@@ -96,10 +96,10 @@ export default function Home() {
       </section> */}
       <section className={utilStyles.brandsWorkedWith}>
         <div className={utilStyles.container}>
-          <h2>
+          <h2 className="font-bold text-3xl">
             Brands I've worked with
           </h2>
-          <ul>
+          <ul className="text-lg leading-normal">
             <li>Astute</li>
             <li>Codeable</li>
             <li>CannaPlanners</li>

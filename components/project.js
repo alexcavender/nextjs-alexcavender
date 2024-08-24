@@ -18,7 +18,7 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
           }
 
 		  .project + .project {
-		  	padding-top: 2rem;
+		  	padding-top: 5rem;
 	 	  }
         }
 
