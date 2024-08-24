@@ -11,29 +11,32 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Montserrat&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </Head>
       <section className={utilStyles.container}>
         <div className={utilStyles.headerGrid}>
           <div>
-            <h2 className={utilStyles.heading2XL}>Hi, I'm Alex.</h2>
-            <h3 className={utilStyles.headingLg}>I'm a Web Developer based in Vermont.</h3>
-            <p>I specialize in PHP (I really like <a href="https://laravel.com" target="_blank">Laravel</a>), and JavaScript (Next.js, React/Preact, Vue).</p>
-          </div>
-          <div className={utilStyles.profilePic}>
+			<div className={utilStyles.profilePic}>
             <Image 
             priority
             src="/images/alex.jpg"
             className={utilStyles.borderCircle}
-            width={220}
-            height={220}
+            width={100}
+            height={100}
             />
           </div>
+            <h1 className={utilStyles.headingLg}>Developer, creator and founder.</h1>
+            <p className="mb-4">Hi, I'm Alex. I'm a Developer and entreprenur based in Vermont. I specialize in PHP (I like <a href="https://laravel.com" target="_blank">Laravel</a>), and JavaScript (Next.js, React/Preact, Vue).</p>
+			<div className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Available for hire</div>
+          </div>
+          
         </div>
       </section>
       <section className={utilStyles.recentProjects}>
         <div className={utilStyles.container}>
-          <h2>Selected Projects</h2>
+          <h2 className="font-bold text-3xl">Selected Projects</h2>
           
           <Project 
             name="BeatStore UI Theme"

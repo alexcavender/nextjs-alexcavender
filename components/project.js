@@ -15,8 +15,11 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
         @media(min-width: 800px) {
           .project {
             flex-direction: ${imgSide == 'left' ? 'row-reverse' : 'row'};
-            padding: 4rem 0;
           }
+
+		  .project + .project {
+		  	padding-top: 2rem;
+	 	  }
         }
 
         .projectContent {
@@ -45,7 +48,7 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
 
           .projectImage a {
             display: block;
-            max-width: 390px;
+            max-width: 100%;
             margin-left: ${imgSide == 'right' ? 'auto' : '0' };
             margin-right: ${imgSide == 'right' ? '0' : 'auto' };
           }

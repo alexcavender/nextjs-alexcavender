@@ -24,11 +24,11 @@ $breakpointLg: '800px';
 }
 
 .headingLg {
-  color: #333;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  margin: 1rem 0;
+	color: #333;
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 1.4;
+	margin: 1rem 0;
 }
 
 .headingMd {
@@ -39,7 +39,7 @@ $breakpointLg: '800px';
 .borderCircle {
   border-radius: 100%;
   display: block;
-  margin: 0 auto;
+//   margin: 0 auto;
 
   @media(min-width: 800px){
 	margin: 0;
@@ -70,28 +70,18 @@ $breakpointLg: '800px';
 
 .headerGrid {
   padding: 100px 0;
+  @apply max-w-2xl;
 }
 
 .headerGrid {
-  text-align: center;
+  text-align: left;
 
   @media(min-width: $breakpointLg) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 180px 0;
     text-align: left;
   }
 }
 
 .profilePic {
-  margin-top: 3.5rem;
-
-  @media(min-width:$breakpointLg) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 0;
-  }
 }
 
 .recentProjects {
@@ -156,6 +146,7 @@ $breakpointLg: '800px';
 
 .footerItem {
   margin-bottom: 3rem;
+  flex: 1;
 
   @media(min-width:800px) {
     margin-bottom: 0;

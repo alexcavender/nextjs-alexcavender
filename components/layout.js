@@ -50,7 +50,7 @@ export default function Layout({ children, home }) {
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Laravel Web Development, React, Vue, PHP. Vermont Web Developer"
+        content="Laravel Development, React, Vue, PHP. Vermont Web Developer."
       />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@ export default function Layout({ children, home }) {
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/alexcavender@gmail.com",
-    title: "How can we help?",
+    title: "How can I help?",
     fields: [
       { 
         type: "email", 
@@ -131,8 +131,8 @@ export default function Layout({ children, home }) {
           </ul>
         </div>
         <div className={utilStyles.footerItem}>
-          <h4>About</h4>
-          <p>Web developer focused on Laravel, PHP, JavaScript, Vue, React.js</p>
+          <h4>About Me</h4>
+          <p>Developer with an interest in Software Security, Laravel, Vue.js. I've been working with the Web since the early days of the web. My hobbies include Music Production, Snowboarding and Coffee</p>
         </div>
       </div>
     </footer>
