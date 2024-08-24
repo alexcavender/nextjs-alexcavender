@@ -137,9 +137,9 @@ export default function Layout({ children, home }) {
       </div>
     </footer>
     <div className={utilStyles.attribution}>
-      &copy; {new Date().getFullYear()}
+     Copyright &copy; {new Date().getFullYear()}
       {'. '}
-      Built with React & <a href="https://nextjs.org/" target="_blank">Next.js</a>
+      All Rights Reserved.
     </div>
     </div>
 }
