@@ -60,7 +60,7 @@ export default function Home() {
 
           <Project
             name="Get Lost Game"
-            description="Get Lost is a geographic discovery game that uses randomized Streetside maps."
+            description="Get Lost is a geographic discovery game that uses randomized Streetside maps. Built with Laravel, Laravel Cashier, Tailwind and Plain JavaScript."
             imgSrc="/images/getlostgame.png"
             imgSide="left"
             imgWidth="748"

@@ -34,16 +34,21 @@ export default function Project({name, link, imgSrc, imgHeight, imgWidth, imgAlt
         }
 
         .projectImage {
+	      
           width: 100%;
           margin-bottom: 1.5rem;
           overflow: hidden;
+
+		  img {
+		    // aspect-ratio: 1 / 1;
+		  	object-fit: cover;
+		  }
         }
 
         @media(min-width:800px) {
           .projectImage {
             width: 50%;
             margin-bottom: 0;
-            
           }
 
           .projectImage a {

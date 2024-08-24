@@ -132,7 +132,7 @@ export default function Layout({ children, home }) {
         </div>
         <div className={utilStyles.footerItem}>
           <h4>About Me</h4>
-          <p>Developer with an interest in Software Security, Laravel, Vue.js. I've been working with the Web since the early days of the web. My hobbies include music production, snowboarding and coffee</p>
+          <p className="text-sm leading-normal">Developer with an interest in Software Security, Laravel, Vue.js. I've been working with the Web since the early days of the web. My hobbies include music production, snowboarding and coffee.</p>
         </div>
       </div>
     </footer>

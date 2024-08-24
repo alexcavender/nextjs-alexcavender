@@ -108,21 +108,26 @@ $breakpointLg: '800px';
 .primaryBtn {
   border-radius: 30px;
   background-color: royalblue;
-  box-shadow: 0 5px 31px rgba(0, 0, 255, 0.418);
+  box-shadow: 0 5px 31px rgba(0, 0, 255, 0.166);
   color: #FFF;
   display: inline-block;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 1.3px;
-  padding: 14px 24px;
+  padding: 14px 48px;
   margin-top: 2rem;
   text-decoration: none;
   transition: .32s;
+  text-align: center;
+  width: 100%;
+
+  @media(min-width: $breakpointLg) {
+	width: auto;
+  }
 
   &:hover {
     background-color: rgb(52, 84, 180);
     text-decoration: none;
-    box-shadow: 0 4px 29px rgba(0, 0, 255, 0.244);
+    box-shadow: 0 4px 29px rgba(0, 0, 255, 0.205);
   }
 }
 
